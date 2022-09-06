@@ -10,12 +10,17 @@
         "doctrine/doctrine-bundle": "^2.7",
         "doctrine/doctrine-migrations-bundle": "^3.2",
         "doctrine/orm": "^2.13",
+        "firebase/php-jwt": "^6.3",
+        "lexik/jwt-authentication-bundle": "^2.16",
         "symfony/console": "6.1.*",
         "symfony/dotenv": "6.1.*",
         "symfony/flex": "^2.2.3",
+        "symfony/form": "6.1.*",
         "symfony/framework-bundle": "6.1.*",
         "symfony/proxy-manager-bridge": "6.1.*",
         "symfony/runtime": "6.1.*",
+        "symfony/security-bundle": "6.1.*",
+        "symfony/twig-bundle": "6.1.*",
         "symfony/yaml": "6.1.*"
     },
     "config": {
@@ -60,7 +65,7 @@
         "post-update-cmd": [
             "@auto-scripts"
         ],
-        "start": "php -S localhost:8000 public"
+        "start": "php -S localhost:3000 public\\index.php"
     },
     "conflict": {
         "symfony/symfony": "*"
@@ -72,6 +77,7 @@
         }
     },
     "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "^3.4",
         "symfony/maker-bundle": "^1.45"
     }
 }
